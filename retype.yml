@@ -1,0 +1,24 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: Hypherion
+  label: Docs
+links:
+- text: Discord
+  link: https://discord.gg/PdVnXf9
+- text: Website
+  link: https://hypherionmc.me
+footer:
+  copyright: "&copy; {{ year }} HypherionMC/HypherionSA. All rights reserved."
+meta:
+  title: " | Hypherion Docs"
+search:
+  placeholder: Search
+snippets:
+  lineNumbers:
+    - js
+    - json
+    - toml
+edit:
+  repo: "https://github.com/hypherionmc/hypheriondocs"
