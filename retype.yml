@@ -1,6 +1,6 @@
 input: .
 output: .retype
-url: # Add your website address here
+url: "https://readme.hypherionmc.me/"
 branding:
   title: Hypherion
   label: Docs
