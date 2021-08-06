@@ -9,6 +9,8 @@ links:
   link: https://discord.gg/PdVnXf9
 - text: Website
   link: https://hypherionmc.me
+- text: Github
+  link: https://github.com/hypherionmc/hypheriondocs
 footer:
   copyright: "&copy; {{ year }} HypherionMC/HypherionSA. All rights reserved."
 meta:
@@ -22,3 +24,4 @@ snippets:
     - toml
 edit:
   repo: "https://github.com/hypherionmc/hypheriondocs"
+  branch: master

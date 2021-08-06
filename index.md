@@ -10,11 +10,11 @@ Here you can find the documentation for my various mods and projects. I will try
 
 ### Docs
 
-||| Mod/Application
-Simple Discord RPC
-||| Docs
-[Simple RPC Docs](simple-rpc/introduction.md)
-|||
+| Mod/Application | Docs |
+| --- | --- |
+| Simple RPC | [Simple RPC Docs](simple-rpc/introduction.md) |
+| Simple Splash Screen | [Simple Splash Screen Docs](simple-splash-screen/introduction.md) |
+
 &nbsp;
 ___
 Need more help? [Join my discord](https://discord.gg/PdVnXf9)
