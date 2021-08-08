@@ -159,31 +159,36 @@ Since Simple RPC Version 1.4, "Multi Language" config files can be used. To lear
 	buttons = []
 
 #World/Dimension Image Overrides
-[world_images]
-	#Enabled/Disable custom images for Worlds/Biomes
-	enabled = false
+#Leave values empty that you don't want to override
+[dimension_overrides]
+    enabled = false
 
-	#The Worlds/Biomes to override
-	[[world_images.worlds]]
-		worldname = "overworld"
-		largeImageKey = "overworld"
-		largeImageText = "In the Overworld"
-		smallImageKey = "mclogo"
-		smallImageText = "%mods% mods installed"
-
-	[[world_images.worlds]]
-		worldname = "the_nether"
-		largeImageKey = "nether"
-		largeImageText = "In the Nether"
-		smallImageKey = "mclogo"
-		smallImageText = "%mods% mods installed"
-
-	[[world_images.worlds]]
-		worldname = "the_end"
-		largeImageKey = "end"
-		largeImageText = "In the End"
-		smallImageKey = "mclogo"
-		smallImageText = "%mods% mods installed"
+    [[dimension_overrides.dimensions]]
+        name = "overworld"
+        description = "%player% is in The Overworld"
+        state = ""
+        largeImageKey = "overworld"
+        largeImageText = "In the Overworld"
+        smallImageKey = "mclogo"
+        smallImageText = "%mods% mods installed"
+    
+    [[dimension_overrides.dimensions]]
+        name = "the_nether"
+        description = "%player% is in The Nether"
+        state = ""
+        largeImageKey = "nether"
+        largeImageText = "In the Nether"
+        smallImageKey = "mclogo"
+        smallImageText = "%mods% mods installed"
+    
+    [[dimension_overrides.dimensions]]
+        name = "the_end"
+        description = "%player% is in The End"
+        state = ""
+        largeImageKey = "end"
+        largeImageText = "In the End"
+        smallImageKey = "mclogo"
+        smallImageText = "%mods% mods installed"
 ```
 &nbsp;  
 ___

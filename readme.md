@@ -25,7 +25,7 @@ To contribute to this documentation, follow the following steps
 * Fork this repository
 * Clone this repo to your pc
 * Run the command `npm install retypeapp --global`
-* Run `npm watch`
+* Run `retype watch`
 
 The last two commands will install Retype and open the preview in your browser. Next, make your changes and double check that they look good and also check your spelling.
 
