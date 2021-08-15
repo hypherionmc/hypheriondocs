@@ -20,7 +20,7 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath 'me.hypherionmc:CurseGradle:2.0.2'
+        classpath 'me.hypherionmc:CurseGradle:2.0.4'
     }
 }
 ```
@@ -84,7 +84,7 @@ Then head over to your `build.gradle` file and add this above `plugins`:
 ```gradle
 buildscript {
     dependencies {
-        classpath 'me.hypherionmc:CurseGradle:2.0.2'
+        classpath 'me.hypherionmc:CurseGradle:2.0.4'
     }
 }
 ```
