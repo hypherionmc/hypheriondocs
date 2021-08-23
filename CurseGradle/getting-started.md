@@ -8,6 +8,16 @@ To add CurseGradle to your project is really simple. At the time of writing this
 ## Basic Setup
 ### Forge
 
+#### Gradle Plugins Registry
+
+To add the plugin to your project, simple add the following line to your gradle script inside the `plugins {}` section:
+
+```gradle
+id "me.hypherionmc.cursegradle" version "2.0.1"
+```
+
+#### Maven Method (Alternative Method)
+
 To get started, you need to add my Maven and the plugin to your buildscript like this:
 
 ```gradle
@@ -53,6 +63,14 @@ curseforge {
 
 ## Fabric
 
+#### Gradle Plugins Registry
+
+To add the plugin to your project, simple add the following line to your gradle script inside the `plugins {}` section:
+
+```gradle
+id "me.hypherionmc.cursegradle" version "2.0.1"
+```
+
 Open your `settings.gradle` file and add this to the `repositories` section:
 
 ```gradle
@@ -60,6 +78,8 @@ maven {
     url = 'https://maven.explodingcreeper.me/'
 }
 ```
+
+#### Maven Method (Alternative Method)
 
 So the file should look something like this:
 
