@@ -4,13 +4,17 @@ order: c
 ---
 Simple RPC uses a TOML based config system with a very simple, well named and commented layout. When running the mod for the first time, a config file will be created using the default settings. You can use the mod as is, use your own data, or use a [Custom App](custom-app.md) entirely.
 
+!!!danger If you really hate editing config files by hand, it's suggested that you use our [Config Editor App](https://github.com/hypherionmc/simple-rpc-editor/releases/). It includes Live preview and fetches the available images directly from discord!
+!!!
 !!!primary
 Since Simple RPC Version 1.4, "Multi Language" config files can be used. To learn more, Check out [Multi Language Config Files](#multi-language-config-files)
 !!!
 &nbsp;  
 **Below is the sample config file with an explanation of each section/item.**
+**To have a value ignored, simple leave it empty!**
 ```toml
 #General Config Section
+#To have a value ignored, simply leave it empty!
 [general]
 	#The Client ID of the Discord App to use. Replace this with your client id from the previous step to change the name of the app
 	clientID = 762726289341677668
@@ -226,7 +230,32 @@ These variables can used inside any **'state'**, **'description'**, **'largeImag
 
 &nbsp;  
 
-#### Single/Multiplayer Variables
+#### Single/Multiplayer Variables (2.4+)
+* **%player%** - Shows the Minecraft name of the player
+* **%world%** - Shows the current world (Dimension): For example overworld/nether/etc
+* **%mods%** - Shows the total amount of installed mods
+* **%difficulty%** - Shows the difficulty of the current game
+* **%position%** - Shows the position of the player
+* **%biome%** - Show the name of the biome you're in
+* **%mcver%** - Show the Minecraft Version: For example 1.16.5
+* **%instance%** - Shows the name of the instance on supported launchers
+* **%launcher%** - Shows the name of the Launcher on supported launchers
+
+&nbsp;
+
+#### Multiplayer Only (2.4+)
+
+These variables only work in multiplayer (lan or online) games
+
+* **%serverip%** - Shows the IP/Address of the server the player is playing on
+* **%servername%** - Shows the name of the server
+* **%players%** - Shows the amount of online players
+* **%maxplayers%** - Shows the max amount of players on the server
+* **%motd%** - Show the Message of the day of the server
+
+&nbsp;
+  
+#### Single/Multiplayer Variables (Pre 2.4)
 * **%player%** - Shows the Minecraft name of the player
 * **%world%** - Shows the current world (Dimension): For example overworld/nether/etc
 * **%mods%** - Shows the total amount of installed mods
@@ -239,7 +268,7 @@ These variables can used inside any **'state'**, **'description'**, **'largeImag
 
 &nbsp;  
 
-#### Multiplayer Only
+#### Multiplayer Only (Pre 2.4)
 
 These variables only work in multiplayer (lan or online) games
 

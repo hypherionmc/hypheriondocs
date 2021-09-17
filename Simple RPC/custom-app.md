@@ -7,7 +7,10 @@ Out of the Box, Simple RPC will use "Minecraft" as the name of the game you are 
 
 While this is ideal for most people, you might want to display the name of your Modpack instead of "Minecraft". This guide aims to help you set this up.
 
-!!!primary By the end of this guide you should:
+!!!info
+You can find and download the default assets used by the mod at the end of this page
+!!!
+  !!!primary By the end of this guide you should:
 - Have a custom discord app set up
 - Have all your RPC images uploaded
 - Have your custom app name displaying on discord
@@ -56,3 +59,16 @@ After saving, your assets may appear empty. This is normal, but you can still us
 &nbsp;  
 &nbsp;  
 There you go. You should now have your custom app setup and ready for use. Next, check out How to configure the config to make use of your app
+&nbsp;  
+### Default Assets and Their Purpose
+&nbsp;
+You can [!button Download](../files/rpcicons.zip) the set of icons used by the default app. You don't need to use all of them! Below is a list of the main images used by the app. The rest of the icons in the set are for things like launcher integration and known servers.
+The names of the images in the set are the image keys you can use
+
+| Image | Image Key | Purpose | 
+| --- | --- | --- |
+| ![mclogo](https://cdn.discordapp.com/app-assets/762726289341677668/762727693144948777.png) | mclogo | Used pre 2.3 for the Large and Small Images |
+| ![mclogonew](https://cdn.discordapp.com/app-assets/762726289341677668/873132898226683905.png) | mclogonew | Used by 2.3+ for the Large and Small Images |
+| ![overwold](https://cdn.discordapp.com/app-assets/762726289341677668/817148572079751188.png) | overworld | Used by the Dimension Override for Overworld as the large image |
+| ![nether](https://cdn.discordapp.com/app-assets/762726289341677668/817148553617080390.png) | nether | Used by the Dimension Override for The Nether as the large image |
+| ![end](https://cdn.discordapp.com/app-assets/762726289341677668/817148546993881088.png) | end | Used by the Dimension Override for The End as the large image |
