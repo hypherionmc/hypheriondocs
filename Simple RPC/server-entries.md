@@ -5,7 +5,7 @@ order: h
 Since Simple RPC Version 2.5, it's now possible to add "custom server entries", that allow you to change the Rich Presence display data based on the IP of the server you are connected to.
 This allows modpack makers to include a rich presence when someone is playing on one of their official servers, instead of just having `Playing on djghksdjh`.
 
-This file can be found in the dedicated `simple-rpc` folder and is called `server-entries.toml`.
+This file can be found in the dedicated `simple-rpc` folder and is called `server-entries.toml`. This file, like the normal config file also supports translations, so, you can for example use `server-entries-en_us.toml` for english.
 
 This file has a very basic layout, and is easy to work with. By default, the config file looks like this:
 
