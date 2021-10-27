@@ -2,7 +2,8 @@
 order: a
 ---
 ![](../img/Simple-Discord-Link.png)
-[![](https://img.shields.io/badge/Hypherion%20Development-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/PdVnXf9)
+
+[![](https://img.shields.io/badge/Spigot/Bukkit-Download%20Here-yellow.svg)](https://dev.bukkit.org/projects/simple-discord-link-bot-forge-fabric-spigot) [![](https://img.shields.io/badge/Forge/Fabric-Download%20Here-yellow.svg)](https://www.curseforge.com/minecraft/mc-mods/simple-discord-link-bot-forge-fabric-spigot/) [![](https://img.shields.io/badge/Jenkins-Development%20Builds-red.svg)](https://ci.hypherionmc.me/job/Simple%20Discord%20Link/) [![](https://img.shields.io/badge/Discord-Hypherion%20Development-blue.svg)](https://discord.gg/PdVnXf9)
 ***
 ![](../img/Overview.png)
 
