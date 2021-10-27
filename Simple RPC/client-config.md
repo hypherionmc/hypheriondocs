@@ -230,7 +230,7 @@ These variables can used inside any **'state'**, **'description'**, **'largeImag
 
 &nbsp;  
 
-#### Single/Multiplayer Variables (2.4+)
+#### Single/Multiplayer Variables (2.5+)
 * **%player%** - Shows the Minecraft name of the player
 * **%world%** - Shows the current world (Dimension): For example overworld/nether/etc
 * **%mods%** - Shows the total amount of installed mods
@@ -240,14 +240,16 @@ These variables can used inside any **'state'**, **'description'**, **'largeImag
 * **%mcver%** - Show the Minecraft Version: For example 1.16.5
 * **%instance%** - Shows the name of the instance on supported launchers
 * **%launcher%** - Shows the name of the Launcher on supported launchers
-
+* **%server%** - Returns the server IP with _ instead of `.` So 127.0.0.1 becomes 127_0_0_1
+* **%launchername%** - Get the name of the launcher (if supported) in lower-case
+ 
 &nbsp;
 
 #### Multiplayer Only (2.4+)
 
 These variables only work in multiplayer (lan or online) games
 
-* **%serverip%** - Shows the IP/Address of the server the player is playing on
+* **%serverip%** - Shows the IP/Address of the server the player is playing on (Deprecated. Will be removed soon)
 * **%servername%** - Shows the name of the server
 * **%players%** - Shows the amount of online players
 * **%maxplayers%** - Shows the max amount of players on the server
