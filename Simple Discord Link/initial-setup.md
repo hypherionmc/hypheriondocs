@@ -44,6 +44,11 @@ KEEP THIS TOKEN PRIVATE AT ALL TIMES! If someone gets hold of this token, they c
 !!!
 &nbsp;
 
+![Bot Intent Screen](../img/bot-perms.png)
+&nbsp;
+Due to a recent change in the discord API for bots, you also need to enable the `GUILD_MEMBERS` and `MESSAGE_CONTENT` intents as well. Without this, the bot will not start
+&nbsp;
+
 ![OAuth2 Scope Section](../img/scopes.png)
 The final step now is to invite the bot to your server. To do this, head over to the "OAuth2" tab on the left-hand menu. This will allow you to generate an invite link to invite the bot to your server.
 
