@@ -75,7 +75,7 @@ This section is about defining your custom images to use. Images must be placed 
 !!!
 
 !!!danger
-Images can only be JPG or PNG. There is currently no support for any other image type. ALSO NOTE that image names CANNOT contain ANY CAPITAL LETTERS. This will result in a crash. This might be changed in a future version.
+Images can only be JPG, PNG or GIF. There is currently no support for any other image type.
 !!!
 
 `BackgroundTexture` -> This is the name of your Background image to use.
