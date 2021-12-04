@@ -48,7 +48,7 @@ If the "Cover Image" is empty, it's recommended that you upload an image here. A
 
 ![Assets Upload View](../img/app-step-5.png)
 !!!primary
-Your icons need to me a minimum size of **512x512px**. **1024x1024px** is recommended
+Your icons need to be a minimum size of **512x512px**. **1024x1024px** is recommended
 !!!
 !!!warning
 By default the image key will be the same as the file name. Take note of them as you need them later on in the config.
