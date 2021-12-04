@@ -15,6 +15,7 @@ Here you can find the documentation for my various mods and projects. I will try
 | Simple RPC | [Simple RPC Docs](simple-rpc/introduction.md) |
 | Simple Splash Screen | [Simple Splash Screen Docs](simple-splash-screen/introduction.md) |
 | Simple Discord Link | [Simple Discord Link Docs](simple-discord-link/introduction.md) |
+| RGBLib | [RGBLib API Docs](rgblib/introduction.md) |
 | CurseGradle | [CurseGradle Docs](cursegradle/getting-started.md) |
 
 &nbsp;
