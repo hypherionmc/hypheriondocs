@@ -8,7 +8,7 @@ This guide aims to help you create your own custom images so that they render co
 
 This texture is pretty straight forward to create. It can be any size you want, but I recommend a minimum size of 1920px x 1080px.
 
-This file must either be a JPG or PNG.
+This file must either be a JPG, PNG or GIF.
 
 #### Mojang Logo
 
