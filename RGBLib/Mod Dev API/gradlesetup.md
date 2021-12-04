@@ -3,8 +3,7 @@ order: a
 title: Gradle Setup
 label: Gradle Setup
 ---
-
-# This guide will allow you to set up the RGBLib API for usage inside your own mod.
+This guide will allow you to set up the RGBLib API for usage inside your own mod.
 
 ## Forge Setup
 The RGBLib api is available from my maven, so you can easily include it inside your project.
