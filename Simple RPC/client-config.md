@@ -243,6 +243,9 @@ These variables can used inside any **'state'**, **'description'**, **'largeImag
 * **%server%** - Returns the server IP with _ instead of `.` So 127.0.0.1 becomes 127_0_0_1
 * **%launchername%** - Get the name of the launcher (if supported) in lower-case
  
+#### Single Player Only Variables (2.6+)
+* **%savename%** - Shows the name of your world
+
 &nbsp;
 
 #### Multiplayer Only (2.4+)
