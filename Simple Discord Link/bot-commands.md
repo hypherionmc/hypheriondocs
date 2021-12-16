@@ -26,7 +26,32 @@ This command lists all player whitelisted THROUGH THE BOT!
 
 ## Other Commands
 
+### help
+The command is `prefix`help. `prefix` will be what you configured in the config. The default is `~`
+
+This command returns a list of commands available on the bot
+
 ### list
 The command is `prefix`list. `prefix` will be what you configured in the config. The default is `~`
 
 This command returns a list of online players on the server
+
+### link
+The command is `prefix`link. `prefix` will be what you configured in the config. The default is `~`
+
+This command allows players to link their Minecraft profile to their Discord Profile. NOTE: The bot needs MANAGE NICKNAMES permissions for this.
+
+### linkedacc
+The command is `prefix`linkedacc. `prefix` will be what you configured in the config. The default is `~`
+
+This command allows admins to view a list of linked Minecraft and Discord accounts
+
+### status
+The command is `prefix`status. `prefix` will be what you configured in the config. The default is `~`
+
+This command displays the status of the server. Only admins and members with KICK_MEMBERS can use this command
+
+### stop
+The command is `prefix`stop. `prefix` will be what you configured in the config. The default is `~`
+
+This command allows you to stop the server. Only admins and members with KICK_MEMBERS can use this command
