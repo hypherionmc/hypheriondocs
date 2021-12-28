@@ -21,7 +21,6 @@ snippets:
   lineNumbers:
     - js
     - json
-    - toml
 edit:
   repo: "https://github.com/hypherionmc/hypheriondocs"
   branch: master

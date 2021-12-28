@@ -2,17 +2,26 @@
 title: Configuring the Mod
 order: c
 ---
-Simple RPC uses a TOML based config system with a very simple, well named and commented layout. When running the mod for the first time, a config file will be created using the default settings. You can use the mod as is, use your own data, or use a [Custom App](custom-app.md) entirely.
-
 !!!danger If you really hate editing config files by hand, it's suggested that you use our [Config Editor App](https://github.com/hypherionmc/simple-rpc-editor/releases/). It includes Live preview and fetches the available images directly from discord!
 !!!
+
+||| Information
+Simple RPC uses a TOML based config system with a very simple, well named and commented layout. When running the mod for the first time, a config file will be created using the default settings. You can use the mod as is, use your own data, or use a [Custom App](custom-app.md) entirely.
 !!!primary
-Since Simple RPC Version 1.4, "Multi Language" config files can be used. To learn more, Check out [Multi Language Config Files](#multi-language-config-files)
+Since Simple RPC Version 1.4, it's possible to create a config for different languages. To learn more, Check out [Multi Language Config Files](#multi-language-config-files)
 !!!
-&nbsp;  
+|||
+
+---
+
+### Default Config
+
+||| Sample Config
 **Below is the sample config file with an explanation of each section/item.**
-**To have a value ignored, simple leave it empty!**
-```toml
+
+**To have a value ignored, simple leave it empty! clientID is required though**
+
+```
 #General Config Section
 #To have a value ignored, simply leave it empty!
 [general]
@@ -194,11 +203,14 @@ Since Simple RPC Version 1.4, "Multi Language" config files can be used. To lear
         smallImageKey = "mclogo"
         smallImageText = "%mods% mods installed"
 ```
+|||
+
+
 &nbsp;  
 ___
-### Multi-Language Config Files
-&nbsp;  
-Simple RPC now (from version 1.4) allows for language detection in Minecraft, so If you decide you wanna play Minecraft in a different language, your discord status can now be shown in that language. But it requires some setup, which is why this section exists.
+### Multi-Language Config Files [!badge Available since 1.4] 
+||| Information
+Simple RPC allows for language detection in Minecraft, so If you decide you wanna play Minecraft in a different language, your discord status can now be shown in that language. But it requires some setup, which is why this section exists.
 
 When launching the game for the first time with 1.4 installed, you will find a new folder called `simple-rpc` inside your `.minecraft` folder. This is the folder in which you will place your translated config files.
 
@@ -207,79 +219,54 @@ To create a translated config file, copy `simple-rpc.toml` from your config fold
 To find a complete list of lang-codes, check out this site -> https://minecraft.fandom.com/wiki/Languages.
 !!!
 
-&nbsp;  
-
 Once you have created this file, you can change all "state", "description", "largeimagetext" and "smallimagetext" fields. You cannot translate the imagekeys!
 
 Some name examples of languages:
 
 * American English -> "simple-rpc-en_us.toml"
 * Dutch -> "simple-rpc-nl_nl.toml"
+|||
 
 !!!danger
 Warning: Leave the default config file in english, as the mod falls back to this file when a translated file cannot be found
 !!!
 
-&nbsp;  
 ___
 ### Configuration Variables
-&nbsp;  
+||| Information
 Variables are pieces of text added to the config file that allows you to display data from the game on your status.
 
 These variables can used inside any **'state'**, **'description'**, **'largeImageText'**, **'smallImageText'** and inside buttons.
-
-&nbsp;  
+|||
 
 #### Single/Multiplayer Variables (2.5+)
-* **%player%** - Shows the Minecraft name of the player
-* **%world%** - Shows the current world (Dimension): For example overworld/nether/etc
-* **%mods%** - Shows the total amount of installed mods
-* **%difficulty%** - Shows the difficulty of the current game
-* **%position%** - Shows the position of the player
-* **%biome%** - Show the name of the biome you're in
-* **%mcver%** - Show the Minecraft Version: For example 1.16.5
-* **%instance%** - Shows the name of the instance on supported launchers
-* **%launcher%** - Shows the name of the Launcher on supported launchers
-* **%server%** - Returns the server IP with _ instead of `.` So 127.0.0.1 becomes 127_0_0_1
-* **%launchername%** - Get the name of the launcher (if supported) in lower-case
- 
-#### Single Player Only Variables (2.6+)
-* **%savename%** - Shows the name of your world
+| Variable | Description |
+| --- | --- |
+| `%player%` | Shows the Minecraft name of the player |
+| `%world%` | Shows the current world (Dimension): For example overworld/nether/etc |
+| `%mods%` | Shows the total amount of installed mods |
+| `%difficulty%` | Shows the difficulty of the current game |
+| `%position%` | Shows the position of the player |
+| `%biome%` | Show the name of the biome you're in |
+| `%mcver%` | Show the Minecraft Version: For example 1.16.5 |
+| `%instance%` | Shows the name of the instance on supported launchers |
+| `%launcher%` | Shows the name of the Launcher on supported launchers |
+| `%server%` | Returns the server IP with _ instead of `.` So 127.0.0.1 becomes 127_0_0_1 |
+| `%launchername%` | Get the name of the launcher (if supported) in lower-case |
+| `%savename%` | Shows the name of your world [!badge Since 2.6] |
 
 &nbsp;
 
 #### Multiplayer Only (2.4+)
 
+| Variable | Description |
+| --- | --- |
+| `%serverip%` | Shows the IP/Address of the server the player is playing on (Deprecated. Will be removed soon) |
+| `%servername%` | Shows the name of the server |
+| `%players%` | Shows the amount of online players |
+| `%maxplayers%` | Shows the max amount of players on the server |
+| `%motd%` | Show the Message of the day of the server |
+
+!!!danger
 These variables only work in multiplayer (lan or online) games
-
-* **%serverip%** - Shows the IP/Address of the server the player is playing on (Deprecated. Will be removed soon)
-* **%servername%** - Shows the name of the server
-* **%players%** - Shows the amount of online players
-* **%maxplayers%** - Shows the max amount of players on the server
-* **%motd%** - Show the Message of the day of the server
-
-&nbsp;
-  
-#### Single/Multiplayer Variables (Pre 2.4)
-* **%player%** - Shows the Minecraft name of the player
-* **%world%** - Shows the current world (Dimension): For example overworld/nether/etc
-* **%mods%** - Shows the total amount of installed mods
-* **%difficulty%** - Shows the difficulty of the current game
-* **%position%** - Shows the position of the player
-* **%biome%** (Since 2.0) - Show the name of the biome you're in
-* **%mcver%** - Show the Minecraft Version: For example 1.16.5
-* **%instance%** - Shows the name of the instance on supported launchers
-* **%launcher%** - Shows the name of the Launcher on supported launchers
-
-&nbsp;  
-
-#### Multiplayer Only (Pre 2.4)
-
-These variables only work in multiplayer (lan or online) games
-
-* ~~**%ip%** - Shows the IP/Address of the server the player is playing on~~ Replaced with %serverip%
-* **%serverip%** - Shows the IP/Address of the server the player is playing on
-* **%servername%** - Shows the name of the server
-* **%players%** - Shows the amount of online players (Excluding the current player)
-* **%maxplayers%** - **(1.12.2 only)** - Shows the max amount of players on the server
-* **%motd%** - Show the Message of the day of the server **(FORGE ONLY)**
+!!!

@@ -5,9 +5,8 @@ order: e
 While this mod normally works perfectly the first time, there are some cases where it may not.
 
 ### My status won't display
-&nbsp;  
 
-Lets rule out the most common issues here.
+Let's rule out the most common issues here.
 
 * Make sure you have an active internet connection. This mod requires internet, because it needs to communicate with the Discord API.
 * You might have disabled game activity on Discord. To check this, head over to `Settings -> Gaming activity`.

@@ -2,19 +2,18 @@
 title: Server Config Override
 order: d
 ---
-Simple RPC 2.0+ now allows you to override the values used by "multi_player" from a server.
-
-To do this, you need to install Simple RPC on your server as well
 !!!primary
 If you do not wish to use this feature, then Simple RPC is only needed client side
 !!!
-&nbsp;  
+Simple RPC 2.0+ now allows you to override the values used by "multi_player" from a server.
+
+To do this, you need to install Simple RPC on your server as well
 
 When you launch your server with Simple RPC installed, you will find a new file called `simple-rpc-server.toml` inside your `config` folder.
 
 **The file will look similar to this:**
 
-```toml
+```
 [general]
 	#Enable/Disable Serverside Overrides
 	enabled = false

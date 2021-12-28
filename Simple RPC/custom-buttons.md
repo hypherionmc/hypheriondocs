@@ -15,7 +15,7 @@ When loading the game the first time with 2.1+ installed, your config file will 
 
 By default, this entry has a value of `buttons = []`. To add your buttons, simple replace `buttons = []` to
 
-```toml
+```
 # section will be either init, main_menu, etc
 [[section.buttons]]
 	label = "Test Button"
@@ -36,7 +36,7 @@ ___
 ### Examples
 &nbsp;
 Adding a single button to the Main Menu RPC:
-```toml
+```
 #The Main Menu event
 [main_menu]
 	#Enable/Disable the Main Menu Event
@@ -63,7 +63,7 @@ Adding a single button to the Main Menu RPC:
 &nbsp;  
 
 Adding two buttons to the Main Menu RPC:
-```toml
+```
 #The Main Menu event
 [main_menu]
 	#Enable/Disable the Main Menu Event

@@ -12,9 +12,9 @@ Here you can find the documentation for my various mods and projects. I will try
 
 | Mod/Application | Docs |
 | --- | --- |
-| Simple RPC | [Simple RPC Docs](simple-rpc/introduction.md) |
-| Simple Splash Screen | [Simple Splash Screen Docs](simple-splash-screen/introduction.md) |
-| Simple Discord Link | [Simple Discord Link Docs](simple-discord-link/introduction.md) |
+| Simple RPC | [Simple RPC Docs](simple-rpc/introduction) |
+| Simple Splash Screen | [Simple Splash Screen Docs](simple-splash-screen/introduction) |
+| Simple Discord Link | [Simple Discord Link Docs](simple-discord-link/introduction) |
 | RGBLib | [RGBLib API Docs](rgblib/introduction.md) |
 | CurseGradle | [CurseGradle Docs](cursegradle/getting-started.md) |
 

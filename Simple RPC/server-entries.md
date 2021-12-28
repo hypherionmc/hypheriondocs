@@ -17,7 +17,7 @@ entries = []
 
 To add a custom server entry, simply replace `entries = []` with the following:
 
-```toml
+```
 [[entry]]
 	ip = "yourserverip"
 	description = "Look mom, I have a server!"
@@ -34,7 +34,7 @@ Please note that `ip`, has to match the IP address or url that you use to connec
 
 As an example, a complete config file would look like this:
 
-```toml
+```
 enabled = true
 version = 1
 
