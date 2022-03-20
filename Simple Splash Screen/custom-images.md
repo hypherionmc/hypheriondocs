@@ -20,4 +20,4 @@ This logo isn't as tricky. It just needs to be 512px x 512px and be in a PNG for
 
 #### Progress Bar Texture
 
-This applies to both the BossBar and Custom progress bar. Your texture needs to be 400px x 10px in a PNG format. This also applies to the CustomBarBackgroundTexture
+This applies to both the BossBar and Custom progress bar. Your texture needs to be 400px x 10px (unless you're using a background overlay) in a PNG format. This also applies to the CustomBarBackgroundTexture

@@ -12,7 +12,7 @@ Valid values are `true` or `false`
 
 `progressBarType` -> This controls what type of progress bar is used.
 
-Valid values are `Vanilla, Bossbar, Custom, Hidden`.
+Valid values are `Vanilla, Bossbar, Custom, Logo, Background, Hidden`.
 
 `logoStyle` -> This controls what logo should be shown.
 
