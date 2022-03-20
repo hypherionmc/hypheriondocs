@@ -16,6 +16,7 @@ Here you can find the documentation for my various mods and projects. I will try
 | Simple Splash Screen | [Simple Splash Screen Docs](simple-splash-screen/introduction) |
 | Simple Discord Link | [Simple Discord Link Docs](simple-discord-link/introduction) |
 | RGBLib | [RGBLib API Docs](rgblib/introduction.md) |
+| MoreCreativeTabs | [MoreCreativeTabs Docs](morecreativetabs/introduction) |
 | CurseGradle | [CurseGradle Docs](cursegradle/getting-started.md) |
 
 &nbsp;

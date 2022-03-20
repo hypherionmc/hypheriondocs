@@ -51,7 +51,7 @@ The command is `prefix`status. `prefix` will be what you configured in the confi
 
 This command displays the status of the server. Only admins and members with KICK_MEMBERS can use this command
 
-### stop
+### stop - (Removed in 1.2)
 The command is `prefix`stop. `prefix` will be what you configured in the config. The default is `~`
 
 This command allows you to stop the server. Only admins and members with KICK_MEMBERS can use this command
