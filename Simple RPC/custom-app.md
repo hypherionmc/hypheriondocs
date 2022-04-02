@@ -70,6 +70,7 @@ After saving, your assets may appear empty. This is normal, but you can still us
 !!!info
 2b
 !!!
+
 ||| Step 1
 Upload your assets to an image hosting site like Imgur. (dropbox, github, and other similar sites can work as well.)
 |||
