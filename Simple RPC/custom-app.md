@@ -51,6 +51,7 @@ There are two ways to do this. you can upload them directly to the discord app, 
 !!!info
 2a
 !!!
+
 ||| Step 1
 ![Assets Overview Screen](../img/rpc/rpc-app-4.png)
 Once you are done setting up the general information for your app, head over to "Rich Presence" from the left side menu. This will take you to the "Assets" page of your app. Here you can upload and manage images that get shown on your Discord Status.
