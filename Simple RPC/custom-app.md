@@ -44,11 +44,9 @@ It's recommended that you upload an icon. The minimum size of your image needs t
 |||
 
 ### Part 2 - Uploading the assets
-||| Notice
 !!!primary
 There are two ways to do this. you can upload them directly to the discord app, or you can use image urls. Each way will be discussed in 2a and 2b respectively
 !!!
-|||
 
 !!!info
 2a
@@ -74,10 +72,6 @@ After saving, your assets may appear empty. This is normal, but you can still us
 !!!
 ||| Step 1
 Upload your assets to an image hosting site like Imgur. (dropbox, github, and other similar sites can work as well.)
-|||
-
-||| Step 2
-Open the config editor app to have it ready. right click your image and click "Copy image address", then paste it into the image key field of where you want the image to show.
 |||
 
 &nbsp;  
