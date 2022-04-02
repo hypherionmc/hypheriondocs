@@ -44,7 +44,15 @@ It's recommended that you upload an icon. The minimum size of your image needs t
 |||
 
 ### Part 2 - Uploading the assets
+||| Notice
+!!!primary
+There are two ways to do this. you can upload them directly to the discord app, or you can use image urls. Each way will be discussed in 2a and 2b respectively
+!!!
+|||
 
+!!!info
+2a
+!!!
 ||| Step 1
 ![Assets Overview Screen](../img/rpc/rpc-app-4.png)
 Once you are done setting up the general information for your app, head over to "Rich Presence" from the left side menu. This will take you to the "Assets" page of your app. Here you can upload and manage images that get shown on your Discord Status.
@@ -60,7 +68,18 @@ Your icons need to be a minimum size of **512x512px**. **1024x1024px** is recomm
 After saving, your assets may appear empty. This is normal, but you can still use them. They will show up again on the dashboard after a couple of minutes.
 !!!
 |||
- 
+
+!!!info
+2b
+!!!
+||| Step 1
+Upload your assets to an image hosting site like Imgur. (dropbox, github, and other similar sites can work as well.)
+|||
+
+||| Step 2
+Open the config editor app to have it ready. right click your image and click "Copy image address", then paste it into the image key field of where you want the image to show.
+|||
+
 &nbsp;  
 There you go. You should now have your custom app setup and ready for use. Next, check out How to configure the config to make use of your app
 &nbsp;  
