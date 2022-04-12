@@ -18,6 +18,12 @@ Let's rule out the most common issues here.
 
 &nbsp;  
 
+### Windows Only
+
+Make sure you are NOT running discord in administrator mode. Doing so will cause the mod to be denied permission to communicate with discord, so your RPC will not display!
+
+&nbsp;
+
 ### This mod crashes my game!
 
 This section only applies to versions before 1.3. A crash would occur if you have an error in your config file or if something went wrong while communicating with discord.

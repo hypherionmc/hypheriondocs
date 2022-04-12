@@ -5,9 +5,9 @@ order: a
 Thank you for choosing or considering Simple Discord RPC. This is a mod that allows you to display Minecraft or a custom Modpack name on your Discord Status, so that other people can see what you are doing.
 
 ||| Information
-- Supported Minecraft Versions: [!badge variant="success" text="1.12.2"] [!badge variant="warning" text="1.14.4"] [!badge variant="warning" text="1.15.2"] [!badge variant="success" text="1.16-1.16.5"] [!badge variant="success" text="1.17-1.17.1"] [!badge variant="success" text="1.18"]
+- Supported Minecraft Versions: [!badge variant="success" text="1.12.2"] [!badge variant="warning" text="1.14.4"] [!badge variant="warning" text="1.15.2"] [!badge variant="success" text="1.16-1.16.5"] [!badge variant="success" text="1.17-1.17.1"] [!badge variant="success" text="1.18-1.18.2"] [!badge variant="info" text="1.19"]
 - Modloader: [!badge variant="success" text="Forge"] [!badge variant="success" text="Fabric"]
-- Current Version: [Version 2.7](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc)
+- Current Version: [Version 2.7.3](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc)
 |||
 
 ||| Version Numbers Explanation

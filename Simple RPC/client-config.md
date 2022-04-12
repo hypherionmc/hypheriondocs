@@ -10,11 +10,23 @@ Simple RPC uses a TOML based config system with a very simple, well named and co
 !!!primary
 Since Simple RPC Version 1.4, it's possible to create a config for different languages. To learn more, Check out [Multi Language Config Files](#multi-language-config-files)
 !!!
+
+!!!danger
+You do not need to restart the game while editing the config. The config will AUTO RELOAD when the file is saved
+!!!
 |||
 
 ---
 
 ### Default Config
+
+!!!warning
+It has recently been discovered that discord has a character limitation on the imageText. It CANNOT be longer than 1288 chars and shorter than 2 chars
+!!!
+
+!!!info
+You can also use Direct links to PNG images to use as "image keys". To do this, upload your image to a site like IMGUR, Dropbox or Github and right click the image, then copy URL. If you paste this URL into your browser and ONLY see the image, it will work. If you see a webpage, it will NOT work!
+!!!
 
 ||| Sample Config
 **Below is the sample config file with an explanation of each section/item.**

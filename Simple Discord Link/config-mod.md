@@ -12,7 +12,7 @@ You can find the `botToken` in the `general` section of the config file.
 
 AN EXAMPLE:
 
-```toml
+```
 #General Mod Config
 [general]
 	#The Token of the Bot to use. KEEP THIS PRIVATE
@@ -50,7 +50,7 @@ Next, paste this URL into the config file where it says `webhookurl`. Also chang
 
 AN EXAMPLE:
 
-```toml
+```
 #Webhook Config
 [webhookConfig]
 	#Should webhook messages be used
@@ -90,7 +90,7 @@ The log channel has no effect when Webhooks are enabled
 
 AN EXAMPLE:
 
-```toml
+```
 #Chat Config
 [chatConfig]
 	#The ID of the channel to post in. This will be ignored if webhooks are enabled
@@ -105,7 +105,7 @@ You can now save the config file, and you should be ready to go. Once you start 
 
 ### The default, un-configured config file contents
 
-```toml
+```
 
 #General Mod Config
 [general]
