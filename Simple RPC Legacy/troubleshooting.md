@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-order: g
+order: e
 ---
 While this mod normally works perfectly the first time, there are some cases where it may not.
 
@@ -16,7 +16,7 @@ Let's rule out the most common issues here.
 * If you are not using the default config file, chances are there is an error with the config file. Double check that the TOML syntax is correct by using a site like https://www.toml-lint.com/.
 * **Check that the Client ID matches the one from your Discord Developer Dashboard. If you copied the ID from ANYWHERE ELSE, it's wrong, and the mod won't work**
 
-&nbsp;
+&nbsp;  
 
 ### Windows Only
 

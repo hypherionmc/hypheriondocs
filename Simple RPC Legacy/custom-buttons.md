@@ -1,20 +1,13 @@
 ---
 title: Adding Custom Buttons
-order: d
+order: f
 ---
-!!!info
-These docs only apply to Simple RPC 3.0 and up. If you are still using one of the older versions, see [Simple RPC Legacy](/simple-rpc-legacy/custom-buttons)
-!!!
-
 ![Example of a Button](../img/buttons.png)
 
 &nbsp;  
 Simple RPC 2.1+ now supports adding customizable buttons to your Rich Presence. This is useful for adding a link to your curseforge page, discord, Youtube, Website or just about anything else.
 !!!primary
 You can only add two buttons per section. This is a Discord Limit and not a mod limit
-!!!
-!!!warning
-Warning, when clicking the button on your own status from your own Discord Account, it will appear to do nothing. This is another discord limitation. To test the button, sign into a second discord account in your web browser.
 !!!
 &nbsp;  
 
@@ -30,6 +23,9 @@ By default, this entry has a value of `buttons = []`. To add your buttons, simpl
 ```
 !!!primary
 You can find a more complete example at the end of this page
+!!!
+!!!warning
+Warning, when clicking the button on your own status from your own Discord Account, it will appear to do nothing. This is another discord limitation. To test the button, sign into a second discord account in your web browser.
 !!!
 
 &nbsp;  
@@ -98,5 +94,5 @@ Adding two buttons to the Main Menu RPC:
 &nbsp;
 ___
 !!!danger
-Please note that discord has a character limit of 32 characters on the `label`. This limit has been implemented internally as well
+Please note that discord has a character limit of 32 characters on the `label`
 !!!
