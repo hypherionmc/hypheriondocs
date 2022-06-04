@@ -337,25 +337,25 @@ Some variables can also be used inside 'largeImageKey' and 'smallImageKey'. Thes
 
 These variables can be used with Single Player, Multi Player and Realms.
 
-| Variable | Description |
-| --- | --- |
-| `%player%` | Shows the Minecraft name of the player |
-| `%world%` | Shows the current world (Dimension): For example overworld/nether/etc |
-| `%mods%` | Shows the total amount of installed mods |
-| `%difficulty%` | Shows the difficulty of the current game |
-| `%position%` | Shows the position of the player |
-| `%biome%` | Show the name of the biome you're in |
-| `%mcver%` | Show the Minecraft Version: For example 1.16.5 |
-| `%instance%` | Shows the name of the Instance on supported launchers |
-| `%launcher%` | Shows the name of the Launcher on supported launchers |
-| `%server%` [!badge IMAGE] | Returns the server IP with _ instead of `.` So 127.0.0.1 becomes 127_0_0_1. Can be used to change the image key based on the server address |
-| `%launchername%` | Get the name of the launcher (if supported) in lower-case |
-| `%savename%` | Shows the name of your world [!badge Since 2.6] |
+| Variable                      | Description |
+|-------------------------------| --- |
+| `%player%`                    | Shows the Minecraft name of the player |
+| `%world%`                     | Shows the current world (Dimension): For example overworld/nether/etc |
+| `%mods%`                      | Shows the total amount of installed mods |
+| `%difficulty%`                | Shows the difficulty of the current game |
+| `%position%`                  | Shows the position of the player |
+| `%biome%`                     | Show the name of the biome you're in |
+| `%mcver%`                     | Show the Minecraft Version: For example 1.16.5 |
+| `%instance%`                  | Shows the name of the Instance on supported launchers |
+| `%launcher%`                  | Shows the name of the Launcher on supported launchers |
+| `%server%` [!badge IMAGE]     | Returns the server IP with _ instead of `.` So 127.0.0.1 becomes 127_0_0_1. Can be used to change the image key based on the server address |
+| `%launchername%`              | Get the name of the launcher (if supported) in lower-case |
+| `%savename%`                  | Shows the name of your world [!badge Since 2.6] |
 | `%playerhead%` [!badge IMAGE] | Uses the Face of the player as an Image Key. No need to have them uploaded |
-| `%gametime12%` | Returns the In-Game time, in 12 Hour Format. For example: 01:00 PM |
-| `%gametime%` | Returns the In-Game time in 24 Hour Format. For example: 13:00 |
-| `%day%` | Returns the In-Game day as shown in F3 |
-| `%weather` | Returns the current weather of the biome the player is in |
+| `%gametime12%`                | Returns the In-Game time, in 12 Hour Format. For example: 01:00 PM |
+| `%gametime%`                  | Returns the In-Game time in 24 Hour Format. For example: 13:00 |
+| `%day%`                       | Returns the In-Game day as shown in F3 |
+| `%weather%`                   | Returns the current weather of the biome the player is in |
 
 +++ Multi Player Only
 These variables can only be used in a Multiplayer/Lan game, in addition to the other variables
