@@ -10,7 +10,7 @@ An example of a disabled tab file would look like this:
 
 ```json
 {
-  "disabled_tabs": ["brewing", "decoration"]
+  "disabled_tabs": ["brewing", "decorations"]
 }
 ```
 
@@ -22,6 +22,6 @@ The file in this example, disables the "Brewing" and "Decoration" tabs.
 
 Finding the name of the tab you wish to disable is simple.
 
-While in the game, execute the command `/showTabNames true`. When opening your creative inventory, you will see the tiles of the tab changed. This is the value you put inside the disabled tabs file.
+While in the game, execute the command `/mct showTabNames true`. When opening your creative inventory, you will see the tiles of the tab changed. This is the value you put inside the disabled tabs file.
 
-To enable the normal titles again, simply do `/showTabNames false`.
+To enable the normal titles again, simply do `/mct showTabNames false`.

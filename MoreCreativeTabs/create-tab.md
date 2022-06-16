@@ -5,7 +5,9 @@ title: Create a Custom Tab
 Creating or configuring a custom tab, is done through JSON from either a Resource or Data pack. For this explanation, we will be using a resource pack.
 
 !!!warning
-When making changes to the resource or data pack, you will need to restart the game in order to view those changes. This is due to the way the tabs are created!
+~~When making changes to the resource or data pack, you will need to restart the game in order to view those changes. This is due to the way the tabs are created!~~
+
+You can now reload edited tabs by running the `/mct reloadTabs` command. Available since 1.1
 !!!
 !!!info
 You can define multiple tabs inside a single pack. You do not need to create a custom one for each one
@@ -14,7 +16,11 @@ You can define multiple tabs inside a single pack. You do not need to create a c
 ***
 
 ### Getting Started
-The first thing you want to do is, create a new, empty resource pack. To save you some time, you can also download the [SKELETON PACK](https://cdn.firstdarkdev.xyz/curse/mct/dl/skeleton_pack.zip) with all the base files already created.
+The first thing you want to do is, create a new, empty resource pack. To save you some time, you can also download the [SKELETON PACK](https://cdn.firstdarkdev.xyz/curse/mct/dl/skeleton_pack_v2.zip) with all the base files already created.
+
+`Other Downloads`
+
+[!button variant="danger" text="Old Format"](https://cdn.firstdarkdev.xyz/curse/mct/dl/skeleton_pack.zip) [!button variant="success" text="New Format"](https://cdn.firstdarkdev.xyz/curse/mct/dl/skeleton_pack_v2.zip) [!button variant="warning" text="New Format (1.19+)"](https://cdn.firstdarkdev.xyz/curse/mct/dl/skeleton_pack_19_v2.zip)
 
 Inside your resource pack, you will need the following folder layout:
 
@@ -30,7 +36,7 @@ Inside your resource pack, you will need the following folder layout:
 ``` 
 
 !!!info
-When using the [SKELETON PACK](https://cdn.firstdarkdev.xyz/curse/mct/dl/skeleton_pack.zip), these files/folders will already be created for you
+When using the [SKELETON PACK](https://cdn.firstdarkdev.xyz/curse/mct/dl/skeleton_pack_v2.zip), these files/folders will already be created for you
 !!!
 
 ---
@@ -45,43 +51,56 @@ Below is a sample config file, with an explanation at the bottom:
 ```json
 {
   "tab_enabled": true,
-  "tab_name": "lighting",
-  "tab_icon": "minecraft:lantern",
+  "tab_name": "test_tab",
+  "tab_stack": { "name": "minecraft:light", "nbt": "{BlockStateTag: {level:\"4\"}}"},
   "tab_items": [
     {
       "name": "minecraft:light",
       "hide_old_tab": true,
-      "nbt": "{BlockStateTag: {level:\"4\"}}"
+      "nbt": "{BlockStateTag: {level:\"10\"}}"
     },
     {
       "name": "minecraft:torch"
     },
-	{
-      "name": "minecraft:soul_torch"
+    {
+      "name": "minecraft:soul_torch",
+      "nbt": "{customName: \"Oi Govener!\"}"
     },
-	{
+    {
       "name": "minecraft:candle"
     }
   ]
 }
+
 ```
 
 Explanation:
 
-| Item/Variable | Purpose |
-| --- | --- |
-| "tab_enabled" | Should this custom tab be loaded by the mod |
-| "tab_name" | The translation key used in the `lang` file. For example: `lighting_tab`. This will be prefixed with `morecreativetabs.` So `lighting_tab` will become `morecreativetabs.lighting_tab` |
-| "tab_icon" | The registry name of the item to use as the tab icon. This must always be in format `modid:itemname`. You can find this by dropping an item on the ground and looking at it, with F3 active |
-| | |
-| "tab_items" | This contains a reference to all the items contained in the tab |
-| "name" | The registry name of the item to use as the tab icon. This must always be in format `modid:itemname`. You can find this by dropping an item on the ground and looking at it, with F3 active |
-| "hide_old_tab" -> Optional | When present and enabled, the item will be removed from its original tab, and only be shown in the custom tab |
-| "nbt" -> Optional | Pretty self explanatory, but this allows you to set NBT values on an item inside the tab |
+| Item/Variable              | Purpose                                                                                                                                                                                     |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "tab_enabled"              | Should this custom tab be loaded by the mod                                                                                                                                                 |
+| "tab_name"                 | The translation key used in the `lang` file. For example: `lighting_tab`. This will be prefixed with `morecreativetabs.` So `lighting_tab` will become `morecreativetabs.lighting_tab`      |
+| (TO BE REMOVED) "tab_icon" | The registry name of the item to use as the tab icon. This must always be in format `modid:itemname`. You can find this by dropping an item on the ground and looking at it, with F3 active |
+| "tab_stack"                | The registry name and optional NBT of the item to use as the tab icon. See example above |                                                                                                   |
+|                            |                                                                                                                                                                                             |
+| "tab_items"                | This contains a reference to all the items contained in the tab                                                                                                                             |
+| "name"                     | The registry name of the item to use as the tab icon. This must always be in format `modid:itemname`. You can find this by dropping an item on the ground and looking at it, with F3 active |
+| "hide_old_tab" -> Optional | When present and enabled, the item will be removed from its original tab, and only be shown in the custom tab                                                                               |
+| "nbt" -> Optional          | Pretty self explanatory, but this allows you to set NBT values on an item inside the tab                                                                                                    |
 
 !!!warning
 "tab_enabled", "tab_name", "tab_icon" and "tab_items" must always be present, or the file will not load
 !!!
+
+---
+
+### Changing the name of an item
+
+Since V1.1, you can now override the name of an item in a custom tag. To do this, add the following to your NBT tag:
+
+```
+customName: \"Your Custom Name Here\"
+```
 
 ---
 
@@ -90,3 +109,4 @@ Explanation:
 Here you can download a couple of pre-made packs, to see how they work and make your own from them.
 
 * [Disable Brewing](https://cdn.firstdarkdev.xyz/curse/mct/dl/disable_brewing.zip) -> Disables the Brewing Tab
+* [Disable Brewing (1.19+)](https://cdn.firstdarkdev.xyz/curse/mct/dl/disable_brewing_v2.zip) -> (For 1.19+) Disables the Brewing Tab
