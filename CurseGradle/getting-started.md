@@ -25,7 +25,7 @@ buildscript {
     repositories {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
-        maven { url = "https://maven.explodingcreeper.me" }
+        maven { url = "https://maven.explodingcreeper.me/releases" }
         mavenCentral()
     }
     dependencies {
