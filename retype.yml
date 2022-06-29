@@ -24,3 +24,6 @@ snippets:
 edit:
   repo: "https://github.com/hypherionmc/hypheriondocs"
   branch: master
+integrations:
+  plausible:
+    domain: plausible.firstdarkdev.xyz
