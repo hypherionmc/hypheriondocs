@@ -39,7 +39,8 @@ ___
 
 ### Examples
 &nbsp;
-Adding a single button to the Main Menu RPC:
+
+#### Adding a button to the main menu
 ```
 #The Main Menu event
 [main_menu]
@@ -96,6 +97,64 @@ Adding two buttons to the Main Menu RPC:
 		url = "https://youtube.com"
 ```
 &nbsp;
+
+***
+
+#### Adding buttons to the Single Player Event
+```
+#The Single Player Event
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Currently In %world%"
+	#The second line of text under the app name
+	state = "Playing lonely mode"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	# REMOVE ME buttons = []
+	[[single_player.buttons]]
+		label = "Test Button"
+		url = "https://google.com"
+```
+
+Adding 2 buttons to the single player event:
+
+```
+#The Single Player Event
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Currently In %world%"
+	#The second line of text under the app name
+	state = "Playing lonely mode"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	# REMOVE ME buttons = []
+	[[single_player.buttons]]
+		label = "Test Button"
+		url = "https://google.com"
+	
+	[[single_player.buttons]]
+		label = "Another Button"
+		url = "https://youtube.com"
+```
+
 ___
 !!!danger
 Please note that discord has a character limit of 32 characters on the `label`. This limit has been implemented internally as well

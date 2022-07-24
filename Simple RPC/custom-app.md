@@ -58,7 +58,7 @@ It's recommended that you upload an icon. The minimum size of your image needs t
 
 ||| Step 1
 ![Assets Overview Screen](../img/rpc/rpc-app-4.png)
-Once you are done setting up the general information for your app, head over to "Rich Presence" from the left side menu. This will take you to the "Assets" page of your app. Here you can upload and manage images that get shown on your Discord Status.
+Once you are done setting up the general information for your app, head over to "Rich Presence" from the left side menu. Next click on `Art Assets`. Here you can upload and manage images that get shown on your Discord Status.
 |||
 
 ||| Step 2
