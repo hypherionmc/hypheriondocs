@@ -53,6 +53,15 @@ Due to a recent change in the discord API for bots, you also need to enable the 
 &nbsp;
 
 ![OAuth2 Scope Section](../img/bot/bot-8.png)
+
+!!!info
+Since Version 1.4, the bot automatically generates an invite link with the required permissions. Keep an eye on your log for a message like this
+```
+[Simple Discord Link/]: Discord Invite Link for Bot: https://discord.com/api/oauth2/authorize?client_id=xxxxxxxxxxxxxxxxx&permissions=738543616&scope=bot
+```
+!!!
+
+
 The final step now is to invite the bot to your server. To do this, head over to the "OAuth2" -> URL Generator tab on the left-hand menu. This will allow you to generate an invite link to invite the bot to your server.
 
 Under the "Scope" section, click "bot" and scroll down to "BOT PERMISSIONS". Under that, choose the following permissions.

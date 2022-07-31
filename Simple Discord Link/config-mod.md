@@ -3,11 +3,23 @@ order: c
 title: Configuring the Mod
 ---
 
-Before continuing, start your server atleast once to have the default config file generated. This file will be located under `config/simple-discord-bot.toml`. Once this file has generated, you can go ahead and shut down the server for now.
++++ Requirements 
+Before you can configure the mod, you need:
+
+* Have a Discord Bot created and invited to your server [See Here](initial-setup.md)
+* Started your server at-least once, to have the config file generated
+
++++ Config File Locations
+* Forge/Fabric/Quilt: `config/simple-discord-bot.toml`
+* Paper/Spigot/Bukkit: `plugins/SDLink/simple-discord-bot.toml`
++++
+
+***
 
 ### Adding the required information
 
-The very first thing to do, is to change the `botToken` field from "" to the token you copied from the previous setup. If you did not do this already, then please visit `Creating the Discord Bot`.
+The very first thing to do, is to change the `botToken` field from "" to the token you copied from the previous setup. If you did not do this already or don't have a bot token, then please visit `Creating the Discord Bot`.
+
 You can find the `botToken` in the `general` section of the config file.
 
 AN EXAMPLE:
@@ -17,20 +29,53 @@ AN EXAMPLE:
 [general]
 	#The Token of the Bot to use. KEEP THIS PRIVATE
 	botToken = "ODcXXXg2ODA0MzkzNTAXXXXX.YRgajA.kzNCQLfGdVhKXXXie4rVC-EXXX"
-	#Should the bot be enabled or not
-	enabled = true
-	#Should debug logging be enabled? WARNING: THIS CAN SPAM YOUR LOG!
-	debugging = false
-	activityUpdateInterval = 120
-	#The prefix to use for bot commands. Example: ~players
-	botPrefix = "~"
-	#Should the bot be allowed to whitelist/un-whitelist players
-	whitelisting = true
-    #The status to display on the bot
-	botStatus = "Playing Minecraft with %players% players"
 ```
+
+***
+
+#### Configuring channels
+
+The mod allows you to configure 2 channels to send messages in. If both are configured, one will be used for Chat messages only, and the other one for everything else.
+
+You do not need to configure both, BUT, `channelID` must always be defined. If it is not, the bot will NOT send messages from discord back to minecraft.
+
+First make sure you have Developer mode enabled in discord. To do/check this, click the gear icon next to your discord name.
+
+![](../img/discord-profile.png)
 &nbsp; &nbsp;
-#### Webhooks vs Channels
+
+Next, scroll down to "APP SETTINGS" and click on `Advanced`. Make sure Developer mode is enabled
+
+![](../img/dev-mode.png)
+
+After doing this, go back to your discord server, choose a channel to use for the chat and right-click on the channel name, then click `Copy ID` on the popup menu. This will copy the Channel ID required for the config to the clipboard.
+
+Next, change `channelID` from `0` to the value you copied in the previous step. If you wish to have a separate chat and events channel, then repeat the previous step on the channel you wish to use for logging and change `logChannelID` from `0` to the copied ID.
+
+You can leave `logChannelID` on `0`, then the mod will simply use your chat channel for everything.
+
+!!!warning
+The log channel has no effect when Webhooks are enabled
+!!!
+
+AN EXAMPLE:
+
+```
+#Chat Config
+[chatConfig]
+	#The ID of the channel to post in. This will be ignored if webhooks are enabled
+	channelID = 123457224520163438
+	#If this ID is set, event messages will be posted in this channel instead of the chat channel
+	logChannelID = 123428407002800200
+```
+
+***
+
+#### Using Webhooks
+
+!!!warning
+You still need to configure the `channelID` config value, otherwise the bot cannot relay messages from discord back to minecraft
+!!!
 
 This mod has two ways of delivering messages. You can choose which one to use. Using Channel Webhooks or using pre-configured channels. Webhooks require a bit more setup, but allows the bot to show the players' skin as the profile picture, and the player name as the name of the person that sent the message. Below is an example of a Webhook message.
 
@@ -67,50 +112,10 @@ You can now also configure another webhook to use as the for Log messages. If th
 
 ***
 
-#### Configuring channels
-
-The mod allows you to configure 2 channels to send messages in. If both are configured, one will be used for Chat messages only, and the other one for everything else.
-
-You do not need to configure both, BUT, `channelID` must always be defined. If it is not, the bot will NOT send messages from discord back to minecraft.
-
-First make sure you have Developer mode enabled in discord. To do/check this, click the gear icon next to your discord name.
-
-![](../img/discord-profile.png)
-&nbsp; &nbsp;
-
-Next, scroll down to "APP SETTINGS" and click on `Advanced`. Make sure Developer mode is enabled
-
-![](../img/dev-mode.png)
-
-After doing this, go back to your discord server, choose a channel to use for the chat and right-click on the channel name, then click `Copy ID` on the popup menu. This will copy the Channel ID required for the config to the clipboard.
-
-Next, change `channelID` from `0` to the value you copied in the previous step. If you wish to have a separate chat and events channel, then repeat the previous step on the channel you wish to use for logging and change `logChannelID` from `0` to the copied ID. 
-
-You can leave `logChannelID` on `0`, then the mod will simply use your chat channel for everything. 
-
-!!!warning
-The log channel has no effect when Webhooks are enabled
-!!!
-
-AN EXAMPLE:
-
-```
-#Chat Config
-[chatConfig]
-	#The ID of the channel to post in. This will be ignored if webhooks are enabled
-	channelID = 123457224520163438
-	#If this ID is set, event messages will be posted in this channel instead of the chat channel
-	logChannelID = 123428407002800200
-```
-
-***
-
-You can now save the config file, and you should be ready to go. Once you start your Minecraft server, the bot should be up and running.
-
 ### The default, un-configured config file contents
 
 ```
-General Mod Config
+#General Mod Config
 [general]
 	#The Token of the Bot to use. KEEP THIS PRIVATE
 	botToken = ""
@@ -122,8 +127,8 @@ General Mod Config
 	activityUpdateInterval = 30
 	#The prefix to use for bot commands. Example: ~players
 	botPrefix = "~"
-	#Should the bot be allowed to whitelist/un-whitelist players
-	whitelisting = false
+	#Should the bot be allowed to whitelist/un-whitelist players. Whitelisting needs to be enabled on your server as well
+	whitelisting = true
 	#Should only admins be allowed to whitelist players
 	onlyAdminsWhitelist = false
 	#Do not add Playing. A status to display on the bot. You can use %players% and %maxplayers% to show the number of players on the server
@@ -133,7 +138,7 @@ General Mod Config
 	#Discord Invite Link used by the in-game invite command
 	inviteLink = ""
 	#Internal version control. DO NOT TOUCH!
-	configVersion = 7
+	configVersion = 10
 
 #Webhook Config
 [webhookConfig]
@@ -154,8 +159,14 @@ General Mod Config
 	channelID = 0
 	#If this ID is set, event messages will be posted in this channel instead of the chat channel
 	logChannelID = 0
-	#Should embeds be used instead of plain text messages
+	#The type of image to use as the player icon in messages. Valid entries are: AVATAR, HEAD, BODY, COMBO
+	playerAvatarType = "COMBO"
+	#Should embeds be used instead of plain text messages for Chat Messages
 	useEmbeds = true
+	#Should embeds be used instead of plain text messages for Log Messages
+	useEmbedsLog = true
+	#Prefix to add to Minecraft when a message is relayed from Discord. Supports MC formatting. Use %user% for the Discord Username
+	mcPrefix = "§e[Discord]§r %user%: "
 	#Should messages from bots be relayed
 	ignoreBots = true
 	#Should SERVER STARTING messages be shown
@@ -197,18 +208,21 @@ General Mod Config
 	playerJoined = "%player% has joined the server!"
 	#Player Left Message. Use %player% to display the player name
 	playerLeft = "%player% has left the server!"
+	#Achievement Messages. Available variables: %player%, %title%, %description%
+	achievements = "%player% has made the advancement [%title%]: %description%"
+	#Chat Messages. Available variables: %player%, %message%
+	chat = "%message%"
 	#The message to show when someone uses /discord command. You can use %inviteurl%
 	inviteMessage = "Hey, check out our discord server here -> %inviteurl%"
 
 #Change in which channel messages appear
 [messageDestinations]
 	#Should Server Starting/Started/Stopping/Stopped Messages be in chat. If false, it will appear in the log channel
-	statusInChat = true
+	statusInChat = false
 	#Should Join/Leave Messages be in chat. If false, it will appear in the log channel
-	joinLeaveInChat = true
+	joinLeaveInChat = false
 	#Should Advancement Messages be in chat. If false, it will appear in the log channel
-	advancementsInChat = true
+	advancementsInChat = false
 	#Should Death messages be in chat. If false, it will appear in the log channel
-	deathInChat = true
-
+	deathInChat = false
 ```
