@@ -10,15 +10,16 @@ Here you can find the documentation for my various mods and projects. I will try
 
 ### Docs
 
-| Mod/Application | Docs |
-| --- | --- |
-| Simple RPC (For 3.0+) | [Simple RPC Docs](simple-rpc/introduction) |
-| Simple RPC Legacy | [Simple RPC Legacy Docs](simple-rpc-legacy/introduction) |
-| Simple Splash Screen | [Simple Splash Screen Docs](simple-splash-screen/introduction) |
-| Simple Discord Link | [Simple Discord Link Docs](simple-discord-link/introduction) |
-| RGBLib | [RGBLib API Docs](rgblib/introduction.md) |
-| MoreCreativeTabs | [MoreCreativeTabs Docs](morecreativetabs/introduction) |
-| CurseGradle | [CurseGradle Docs](cursegradle/getting-started.md) |
+| Mod/Application       | Docs                                                           |
+|-----------------------|----------------------------------------------------------------|
+| Simple RPC (For 3.0+) | [Simple RPC Docs](simple-rpc/introduction)                     |
+| Simple RPC Legacy     | [Simple RPC Legacy Docs](simple-rpc-legacy/introduction)       |
+| Simple Splash Screen  | [Simple Splash Screen Docs](simple-splash-screen/introduction) |
+| Simple Discord Link   | [Simple Discord Link Docs](simple-discord-link/introduction)   |
+| RGBLib                | [RGBLib API Docs](rgblib/introduction.md)                      |
+| MoreCreativeTabs      | [MoreCreativeTabs Docs](morecreativetabs/introduction)         |
+| MaintenanceMode       | [MaintenanceMode Docs](maintenance-mode/introduction)          |
+| CurseGradle           | [CurseGradle Docs](cursegradle/getting-started.md)             |
 
 &nbsp;
 

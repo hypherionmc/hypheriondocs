@@ -45,5 +45,18 @@ Add a player to the list of allowed players that can join the server during main
 Remove a player from the list of allowed players that can join the server during maintenance mode
 |||
 
+||| [!badge Since 1.1] Command `maintenance setMotd Your Message Here`
+Change the MOTD that is displayed while the server is in maintenance mode
+|||
+
+||| [!badge Since 1.1] Using a different Server Icon when in Maintenance
+Since Version 1.1, it's possible to set an alternative icon for your server while in maintenance mode.
+
+To do this, upload another png image of 64x64px (in the same folder as your current server icon) and name it `whateveryoulike.png`.
+
+Next, head over to `config/mmode.json`. Change the value of `maintenanceIcon` to `whateveryoulike.png`.
+
+Finally, execute the command `maintenance reload` to reload the config. Your server will not display this icon when you have maintenance mode enabled
+|||
 
 And that's it. More feature/commands will come in the future
