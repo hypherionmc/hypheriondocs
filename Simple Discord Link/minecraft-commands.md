@@ -4,6 +4,9 @@ order: e
 
 Minecraft commands are in-game commands added by the mod.
 
+### /sdreload
+Reload the bot and config. This removes the need to restart the server when changing the config
+
 ### /discord
 This returns a pre-configured discord invite link
 

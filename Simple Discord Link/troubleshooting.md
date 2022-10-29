@@ -8,6 +8,12 @@ Since Version 1.4.0, configuration and permission errors are printed to the log.
 
 ***
 
+### Blank Messages sent to Discord
+
+You did not enable the needed permissions on your discord account, as stated in the docs.
+
+Visit [Creating The Discord Bot](initial-setup.md) and see PART 3
+
 ### Bot Not Invited
 
 This error occurs when you have not invited the bot to your discord server. Yes this seems like common sense, yet people still forget to do that, or just don't do it at all.
